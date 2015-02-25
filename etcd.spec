@@ -73,7 +73,7 @@ install    -m 755 %{_builddir}/%{name}-v%{version}-linux-amd64/etcd    %{buildro
 install    -m 755 %{_builddir}/%{name}-v%{version}-linux-amd64/etcdctl %{buildroot}/%{_sbindir}
 
 install -d -m 755 %{buildroot}/usr/share/doc/%{name}-v%{version}
-install    -m 644 %{_builddir}/%{name}-v%{version}-linux-amd64/README-etcd.md    %{buildroot}/%{_defaultdocdir}/%{name}-v%{version}
+install    -m 644 %{_builddir}/%{name}-v%{version}-linux-amd64/README.md    %{buildroot}/%{_defaultdocdir}/%{name}-v%{version}
 install    -m 644 %{_builddir}/%{name}-v%{version}-linux-amd64/README-etcdctl.md %{buildroot}/%{_defaultdocdir}/%{name}-v%{version}
 
 install -d -m 755 %{buildroot}/%{_localstatedir}/log/%{name}
